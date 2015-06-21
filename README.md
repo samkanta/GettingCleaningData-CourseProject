@@ -1,23 +1,29 @@
 # GettingCleaningData-CourseProject
 
-Overview
+## Overview
 The purpose of the Course Project was to demonstrate my ability to collect, manipulate, and ultimely transform a large amount of data into a clean and ultimely "tidy" data set.
 
-Data Collection
+## Repo Contents
+
+File | Description
+:------ | ----------
+README.md | This document, explains the contents of the Repo
+codebook.md | Describes the variables, data and process undertaken to clean and tidy data sets.  
+run_analysis.R | The R Script that, when run, executes a multi-process function for the getting and cleaning of data
+tidy_data.txt | The output of the R Script, meeting the criteria of "tidy" data
+
+## Data Collection
 The data files for the Project were made available from the UC Irvine Machine Learning Repository, based on a study of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The resulting data sets collectively formed the Human Activity Recognition database; the findings of the 
 
 
-Transformation
+## Transformation
 
 
 
-Outcomes
+## Outcomes
 The repository contains these files:
 
-README.md
-codebook.md
-run_analysis.R
-tidy_data.txt
+
 
 
 
