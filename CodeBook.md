@@ -14,38 +14,26 @@ Although the original study examined 561 features, the measures for computing fe
 Based on the requirements for the Course Project, there were 67 "grouped" Variables by sensor:
 
 
-Name | Description
+Sensor Name | Measures
 ----- | -----
-Body Acc |
-Gravity Acc |
-Body Acc Jerk |
-Body Angular Speed |
-Body Angular Acc |
-Body Acc Magnitude |
-Gravity Acc Mag |
-Body Acc Jerk Mag |
-Body Angular Speed Mag |
+Body Acc | timeBodyAccelorometer 
+Gravity Acc | timeGravityAcceolometer
+Body Acc Jerk | timeBodyAccelerometerJerk
+Body Angular Speed | timeBodyGyroscope
+Body Angular Acc | timeBodyGyroscopeJerk
+Body Acc Magnitude | timeBodyAccelerometerMagnitude
+Gravity Acc Mag | frequencyBodyAccelerometerJerkMagnitude
+Body Acc Jerk Mag | frequencyBodyGyroscopeMagnitude
+Body Angular Speed Mag | frequencyBodyGyroscopeJerkMagnitude
 Body Angular Acc Mag | 
 
 
 
-Sensor Groups | Variable Name
--------------- | --------------
- 
-
-
-timeBodyAccelorometer 
-timeGravityAcceolometer
-timeBodyAccelerometerJerk
-timeBodyGyroscope
-timeBodyGyroscopeJerk
-timeBodyAccelerometerMagnitude
-frequencyBodyAccelerometerJerkMagnitude
-frequencyBodyGyroscopeMagnitude
-frequencyBodyGyroscopeJerkMagnitude
+Measurement Groups 
 
 #### Total number of variables
-- activity (with 6 levels: 
+- activity (with 6 levels: *standing, sitting, laying
+down, walking, walking downstairs and upstairs*
 - timeBodyAccelerometer-mean()-X
 - timeBodyAccelerometer-mean()-Y
 - timeBodyAccelerometer-mean()-Z
