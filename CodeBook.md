@@ -1,6 +1,6 @@
 # CodeBook
 
-This CodeBook presents the methodology applied to cleaning and tidying large data sets used in a study of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors (see . 
+This CodeBook presents the methodology applied to cleaning and tidying large data sets used in a study of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors (see Anguita, Ghio, Oneto, Parra, & Reyes-Ortiz, 2013). 
 
 Data Sources
 The data sets from the study collectively formed the Human Activity Recognition database, available here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
@@ -8,7 +8,10 @@ The data sets from the study collectively formed the Human Activity Recognition 
 
 
 Variables
+Although the original study examined 561 features, the measures for computing feature vectors in the Course Project were limited to Mean Value (mean) and Standard Deviation (std).
 
+
+Based on the requirements for the Course Project, there were 67 "grouped" Variables by sensor:
 
 
 Name | Description
@@ -24,14 +27,26 @@ Body Acc Jerk Mag |
 Body Angular Speed Mag |
 Body Angular Acc Mag | 
 
-Although the original study examined 561 features, the measures for computing feature vectors in the Course Project were limited to Mean Value (mean) and Standard Deviation (std).
 
 
-Based on the requirements for the Course Project, there were 67 "grouped" Variables by sensor:
+Sensor Groups | Variable Name
+-------------- | --------------
+| timeBodyAccelorometer | - timeBodyAccelerometer-mean()-X
+- timeBodyAccelerometer-mean()-Y
+- timeBodyAccelerometer-mean()-Z
+- timeBodyAccelerometer-std()-X
+- timeBodyAccelerometer-std()-Y
+- timeBodyAccelerometer-std()-Z |
+| timeGravityAcceolometer | - timeGravityAccelerometer-mean()-X
+- timeGravityAccelerometer-mean()-Y
+- timeGravityAccelerometer-mean()-Z
+- timeGravityAccelerometer-std()-X
+- timeGravityAccelerometer-std()-Y
+- timeGravityAccelerometer-std()-Z |
 
-#### Sensor Groups
-timeBodyAccelorometer
-timeGravityAcceolometer
+
+
+
 timeBodyAccelerometerJerk
 timeBodyGyroscope
 timeBodyGyroscopeJerk
@@ -42,18 +57,8 @@ frequencyBodyGyroscopeJerkMagnitude
 
 #### Total number of variables
 - activity (with 6 levels: 
-- timeBodyAccelerometer-mean()-X
-- timeBodyAccelerometer-mean()-Y
-- timeBodyAccelerometer-mean()-Z
-- timeBodyAccelerometer-std()-X
-- timeBodyAccelerometer-std()-Y
-- timeBodyAccelerometer-std()-Z
-- timeGravityAccelerometer-mean()-X
-- timeGravityAccelerometer-mean()-Y
-- timeGravityAccelerometer-mean()-Z
-- timeGravityAccelerometer-std()-X
-- timeGravityAccelerometer-std()-Y
-- timeGravityAccelerometer-std()-Z
+
+
 - timeBodyAccelerometerJerk-mean()-X
 - timeBodyAccelerometerJerk-mean()-Y
 - timeBodyAccelerometerJerk-mean()-Z
@@ -110,3 +115,6 @@ frequencyBodyGyroscopeJerkMagnitude
 - frequencyBodyGyroscopeJerkMagnitude-std()
 
 
+References
+
+Anguita, D., Ghio, A., Oneto,L., Parra, X., and Reyes-Ortiz, J.L. (2013) A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. Retrieved from https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2013-84.pdf
