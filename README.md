@@ -16,21 +16,9 @@ tidy_data.txt | The output of the R Script, meeting the criteria of "tidy" data.
 The data files for the Project were made available from the UC Irvine Machine Learning Repository, 
 
 
-## Transformation
+## The Data Analysis [run_analysis.R]
 
-
-
-## Outcomes
-The repository contains these files:
-
-
-
-
-
-
-
-
-There are five major processes to getting and cleaning data in the run_analysis.R file:
+There are five (5) major processes to getting and cleaning data in the **run_analysis.R** file:
 
 1. Reading in multiple data files
 2. Combining data files
@@ -40,14 +28,19 @@ There are five major processes to getting and cleaning data in the run_analysis.
 6. Generating the tidy data set output.
 7. 
 
-The actual script was written as a function, see the run_analysis.R for details, but the sequence of properties within the function was as follows:
-
+The actual script was written as a *function*, see the run_analysis.R for details, but the sequence of arguments within the function were:
 
 1. Reading in IDs for the 'train' and 'test' data sets - read.table
 2. Combining 'train' and 'test' data sets into one data frame - rbind
 3. Reading in the list of features, i.e. the labels
 4. 
 
+## Output [tidy_data.txt] 
+The output from the run_analysis.R script was a data file containing the final tidy data set. The three conditions for 'tidy' data, according to Wickham (2014):
+ 1. Each type of observational unit forms a table
+ 2. Each variable forms a column
+ 3. Each observation (case) forms a row
+ 
 
-
-
+Reference
+Wickham, H. (2014). Tidy Data. *Journal of Statistical Software, 59 (10)*, 1-23. Retrieved from http://www.jstatsoft.org/v59/i10/paper
