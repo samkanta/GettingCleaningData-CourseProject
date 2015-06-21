@@ -50,6 +50,4 @@ The actual script was written as a function, see the run_analysis.R for details,
 
 
 
-References
 
-Anguita, D., Ghio, A., Oneto,L., Parra, X., and Reyes-Ortiz, J.L. (2013) A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. Retrieved from https://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2013-84.pdf
