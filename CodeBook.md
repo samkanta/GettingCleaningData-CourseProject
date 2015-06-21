@@ -7,7 +7,7 @@ The data sets from the study collectively formed the Human Activity Recognition 
 - these were used as the basis for the Course Project.
 
 ## Variables
-Although the original study examined 561 features, the measures for computing feature vectors in the Course Project were limited to Mean Value (mean) and Standard Deviation (std). The vectors included each axial reading (i.e. X, Y, Z coordinate), so although there were 10 sensors, the axial coordinate means and std as variables increased the total number of variables for each observation in excess of 70. [see examples below]
+Although the original study examined 561 features, the measures for computing feature vectors in the Course Project were limited to Mean Value (mean) and Standard Deviation (std). The vectors included each axial reading (i.e. X, Y, Z coordinates), so although there were 10 sensors, the axial coordinate means and std as variables increased the total number of variables for each observation in excess of 70. [see examples below]
 
 ### Measurement for Variables (grouped by Smartphone sensor):
 
@@ -102,9 +102,9 @@ The raw data sets were processed with the **run_analysis.R** script. The process
 2. Combining data files (X_train.txt, X_test.txt, subject_train.txt, subject_test.txt, y_train.txt, y_test.txt)
 3. Variables assigned human-readable labels (from features.txt) 
 3. Creating subsets for only features, i.e. variables, that contain *mean* or *std* in their labels.
-4. Reading in activity labels that are applied to the mean and std subsets (activity_labels.txt). A new column (Activity_id) is added to the subsets where variable labels are changed to be readable by R and more descriptive for humans.
+4. Reading in activity labels that are applied to the mean and std subsets (activity_labels.txt). A new column is added to the subsets where variable labels are changed to be readable by R and more descriptive for humans.
 5. Reshaping of data into what is considered a tidy data set
-6. Generating the tidy data set output.
+6. Generating the tidy data set output (tidydata.txt).
 
 
 ##References
