@@ -1,4 +1,4 @@
-# GettingCleaningData-CourseProject
+# Getting & Cleaning Data-CourseProject
 
 ## Overview
 The purpose of the Course Project was to demonstrate my ability to collect, manipulate, and ultimely transform a large amount of data into a clean and ultimely "tidy" data set.
@@ -13,30 +13,20 @@ run_analysis.R | The R Script that, when run, executes a multi-process function 
 tidy_data.txt | The output of the R Script, meeting the criteria of "tidy" data.
 
 ## Data Source
-The data files for the Project were made available from the UC Irvine Machine Learning Repository, 
+The original data files for the Project were made available from the UC Irvine Machine Learning Repository (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) 
 
 
 ## The Data Analysis [run_analysis.R]
 
 There are five (5) major processes to getting and cleaning data in the **run_analysis.R** file:
 
-1. Reading in multiple data files
-2. Combining data files
-3. Creating subsets for only features that are a measurement of mean or SD (standard deviation)
-4. Reading in activity labels that are applied to the subsets 
-5. Reshaping of data into what is considered a tidy data set
-6. Generating the tidy data set output.
-7. 
+1. Reading in and combining multiple data files
+2. Creating subsets for only features that are a measurement of mean or SD (standard deviation)
+3. Reading in activity labels that are applied to the subsets 
+4. Reshaping of data into what is considered a tidy data set
+5. Generating the tidy data set output.
 
-The actual script was written as a *function*, see the run_analysis.R for details, but the sequence of arguments within the function were:
-
-1. Reading in IDs for the 'train' and 'test' data sets - read.table
-2. Combining 'train' and 'test' data sets into one data frame - rbind
-3. Reading in the list of features, i.e. the labels
-4. Subset the mean and std results - grep
-5. 
-6. 
-7. Generate the output of the tidy data into a text file  - write.table
+The entire R script was written as a *function* - see the run_analysis.R for details.
 
 ## Output [tidy_data.txt] 
 The output from the run_analysis.R script was a data file containing the final tidy data set. The three conditions for 'tidy' data, according to Wickham (2014):
