@@ -6,6 +6,12 @@ Data Sources
 The data sets from the study collectively formed the Human Activity Recognition database, available here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 - these were used as the basis for the Course Project.
 
+Data Transformation
+The raw data sets were processed with the run_analysis.R script. Within the script, the following...
+
+
+
+
 
 Variables
 Although the original study examined 561 features, the measures for computing feature vectors in the Course Project were limited to Mean Value (mean) and Standard Deviation (std).
@@ -25,7 +31,7 @@ Body Acc Magnitude | timeBodyAccelerometerMagnitude
 Gravity Acc Mag | frequencyBodyAccelerometerJerkMagnitude
 Body Acc Jerk Mag | frequencyBodyGyroscopeMagnitude
 Body Angular Speed Mag | frequencyBodyGyroscopeJerkMagnitude
-Body Angular Acc Mag | 
+Body Angular Acc Mag | frequencyBodyAccelerometerMagnitude
 
 
 
@@ -100,6 +106,8 @@ down, walking, walking downstairs and upstairs*
 - frequencyBodyGyroscopeMagnitude-std()
 - frequencyBodyGyroscopeJerkMagnitude-mean()
 - frequencyBodyGyroscopeJerkMagnitude-std()
+
+
 
 
 References
