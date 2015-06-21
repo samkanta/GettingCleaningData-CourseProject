@@ -31,22 +31,11 @@ Body Angular Acc Mag |
 
 Sensor Groups | Variable Name
 -------------- | --------------
-| timeBodyAccelorometer | - timeBodyAccelerometer-mean()-X
-- timeBodyAccelerometer-mean()-Y
-- timeBodyAccelerometer-mean()-Z
-- timeBodyAccelerometer-std()-X
-- timeBodyAccelerometer-std()-Y
-- timeBodyAccelerometer-std()-Z |
-| timeGravityAcceolometer | - timeGravityAccelerometer-mean()-X
-- timeGravityAccelerometer-mean()-Y
-- timeGravityAccelerometer-mean()-Z
-- timeGravityAccelerometer-std()-X
-- timeGravityAccelerometer-std()-Y
-- timeGravityAccelerometer-std()-Z |
+ 
 
 
-
-
+timeBodyAccelorometer 
+timeGravityAcceolometer
 timeBodyAccelerometerJerk
 timeBodyGyroscope
 timeBodyGyroscopeJerk
@@ -57,8 +46,18 @@ frequencyBodyGyroscopeJerkMagnitude
 
 #### Total number of variables
 - activity (with 6 levels: 
-
-
+- timeBodyAccelerometer-mean()-X
+- timeBodyAccelerometer-mean()-Y
+- timeBodyAccelerometer-mean()-Z
+- timeBodyAccelerometer-std()-X
+- timeBodyAccelerometer-std()-Y
+- timeBodyAccelerometer-std()-Z
+- timeGravityAccelerometer-mean()-X
+- timeGravityAccelerometer-mean()-Y
+- timeGravityAccelerometer-mean()-Z
+- timeGravityAccelerometer-std()-X
+- timeGravityAccelerometer-std()-Y
+- timeGravityAccelerometer-std()-Z
 - timeBodyAccelerometerJerk-mean()-X
 - timeBodyAccelerometerJerk-mean()-Y
 - timeBodyAccelerometerJerk-mean()-Z
