@@ -3,11 +3,29 @@ This is the CodeBook containing the description of Variables.
 
 
 
+Name | Description
+----- | -----
+Body Acc |
+Gravity Acc |
+Body Acc Jerk |
+Body Angular Speed |
+Body Angular Acc |
+Body Acc Magnitude |
+Gravity Acc Mag |
+Body Acc Jerk Mag |
+Body Angular Speed Mag |
+Body Angular Acc Mag | 
 
+Acc = Accelerometer
+
+
+561 features
+
+Table 1. List of measures for computing feature vectors.
 Function | Description
 :-------- | --------
-mean | Mean value
-std | Standard deviation
+|mean | Mean value|
+|std | Standard deviation|
 |mad | Median absolute value|
 |max | Largest values in array|
 |min | Smallest value in array|
