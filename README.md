@@ -33,7 +33,10 @@ The actual script was written as a *function*, see the run_analysis.R for detail
 1. Reading in IDs for the 'train' and 'test' data sets - read.table
 2. Combining 'train' and 'test' data sets into one data frame - rbind
 3. Reading in the list of features, i.e. the labels
-4. 
+4. Subset the mean and std results - grep
+5. 
+6. 
+7. Generate the output of the tidy data into a text file  - write.table
 
 ## Output [tidy_data.txt] 
 The output from the run_analysis.R script was a data file containing the final tidy data set. The three conditions for 'tidy' data, according to Wickham (2014):
@@ -42,5 +45,5 @@ The output from the run_analysis.R script was a data file containing the final t
  3. Each observation (case) forms a row
  
 
-Reference
+## Reference
 Wickham, H. (2014). Tidy Data. *Journal of Statistical Software, 59 (10)*, 1-23. Retrieved from http://www.jstatsoft.org/v59/i10/paper
