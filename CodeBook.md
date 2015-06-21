@@ -1,8 +1,13 @@
 # CodeBook
 
+This CodeBook presents the methodology applied to cleaning and tidying large data sets used in a study of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors (see . 
 
-This is the CodeBook containing the description of Variables.
+Data Sources
+The data sets from the study collectively formed the Human Activity Recognition database, available here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
+- these were used as the basis for the Course Project.
 
+
+Variables
 
 
 
@@ -19,20 +24,12 @@ Body Acc Jerk Mag |
 Body Angular Speed Mag |
 Body Angular Acc Mag | 
 
-Acc = Accelerometer
-
-
-561 features
-
-Table 1. List of measures for computing feature vectors.
-Function | Description
-:-------- | --------
-|mean | Mean value|
-|std | Standard deviation|
+Although the original study examined 561 features, the measures for computing feature vectors in the Course Project were limited to Mean Value (mean) and Standard Deviation (std).
 
 
 Based on the requirements for the Course Project, there were 67 "grouped" Variables by sensor:
 
+#### Sensor Groups
 timeBodyAccelorometer
 timeGravityAcceolometer
 timeBodyAccelerometerJerk
@@ -43,7 +40,7 @@ frequencyBodyAccelerometerJerkMagnitude
 frequencyBodyGyroscopeMagnitude
 frequencyBodyGyroscopeJerkMagnitude
 
-But the total number of variables was far greater, as the 
+#### Total number of variables
 - activity (with 6 levels: 
 - timeBodyAccelerometer-mean()-X
 - timeBodyAccelerometer-mean()-Y
