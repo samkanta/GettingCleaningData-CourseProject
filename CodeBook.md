@@ -2,22 +2,28 @@
 
 This CodeBook presents the methodology applied to cleaning and tidying large data sets used in a study of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors (see Anguita, Ghio, Oneto, Parra, & Reyes-Ortiz, 2013). 
 
-Data Sources
+## Data Sources
 The data sets from the study collectively formed the Human Activity Recognition database, available here: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
 - these were used as the basis for the Course Project.
 
-Data Transformation
-The raw data sets were processed with the run_analysis.R script. Within the script, the following...
+## Data Transformation
+The raw data sets were processed with the run_analysis.R script.
+
+There were five major processes to getting and cleaning data in the run_analysis.R file:
+
+1. Reading in multiple data files
+2. Combining data files
+3. Creating subsets for only features that are a measurement of *mean* or *SD* (standard deviation)
+4. Reading in activity labels that are applied to the subsets
+5. Reshaping of data into what is considered a tidy data set
+6. Generating the tidy data set output.
 
 
-
-
-
-Variables
+## Variables
 Although the original study examined 561 features, the measures for computing feature vectors in the Course Project were limited to Mean Value (mean) and Standard Deviation (std).
 
 
-Based on the requirements for the Course Project, there were 67 "grouped" Variables by sensor:
+### Measurement for Variables (grouped by Smartphone sensor):
 
 
 Sensor Name | Measures
@@ -35,11 +41,9 @@ Body Angular Acc Mag | frequencyBodyAccelerometerMagnitude
 
 
 
-Measurement Groups 
-
-#### Total number of variables
+### Total number of variables
 - activity (with 6 levels: *standing, sitting, laying
-down, walking, walking downstairs and upstairs*
+down, walking, walking downstairs and upstairs*)
 - timeBodyAccelerometer-mean()-X
 - timeBodyAccelerometer-mean()-Y
 - timeBodyAccelerometer-mean()-Z
